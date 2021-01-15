@@ -86,12 +86,14 @@ function keyPressed() {
 	    sling.attach(rock.body);
 	}
 }
-
+var body1;
+var body2;
+        
 function detectollision(body1,body2){
 
     var distance = distance(body1.x,body1.y,body2.x,body2.y)
-    if (distance <= body2.r+ body1.r){
-        Matter.Body.setStatic(lmango.body , false);
+    if (distance <= body2 + body1){
+        Matter.Body.setStatic(body2.body, false);
     } 
 }
 detectollision(rock,mango1);
